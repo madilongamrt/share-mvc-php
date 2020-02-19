@@ -6,6 +6,7 @@ class Users extends Controller{
         
     }
 
+    // register fuction
     public function register() {
         
         // check for posts
@@ -19,14 +20,37 @@ class Users extends Controller{
             'email' => '',
             'password' => '',
             'confirm_password' => '',
-            'name_error' => '',
-            'email_error' => '',
-            'password_error' => '',
-            'confirm_password_error' => '',
+            'name_err' => '',
+            'email_err' => '',
+            'password_err' => '',
+            'confirm_password_err' => '',
            ];
 
            // load view
            $this->view('users/register',$data);
+          
+        }
+    }
+
+    // login function
+    public function login() {
+        
+        // check for posts
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+            // Process form
+        } else{
+           // init data
+           $data =[
+          
+            'email' => '',
+            'password' => '',
+            'email_err' => '',
+            'password_err' => '',
+           ];
+
+           // load view
+           $this->view('users/login',$data);
           
         }
     }
