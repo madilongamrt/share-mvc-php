@@ -1,19 +1,22 @@
 <?php
 // DB params
 define('DB_HOST','localhost');
-define('DB_USER','_YOUR_USER_NAME_');
-define('DB_PASS','_YOUR_PASS_');
-define('DB_NAME','_YOUR_DBNAME_');
+define('DB_USER','root');
+define('DB_PASS','Letsdoit!');
+define('DB_NAME','shareposts');
 
 
 // app root
 define('APPROOT',dirname(dirname(__FILE__)));
 
 // URL ROOT
-define('URLROOT','_YOUR_URL_');
+define('URLROOT','http://localhost/sharepoint');
 
 // site Name
-define('SITENAME','_YOUR_SITENAME_');
+define('SITENAME','sharepost');
+
+// app version
+define('APPVERSION','1.0.0');
 
 
 ?>
