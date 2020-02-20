@@ -73,11 +73,14 @@ class Database {
         return $this->stmt->execute();
     }
     
+    
     // result set as array of object
     public function resultSet() {
         $this->execute();
         return $this->stmt->fetchAll(PDO::FETCH_OBJ);
     }
+
+    
     
     // get single record as object
     public function single() {
